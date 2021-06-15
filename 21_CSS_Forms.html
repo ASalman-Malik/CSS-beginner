@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS forms</title>
+    <style>
+        body{
+/*            background-image: url("http://www.thisiscolossal.com/wp-content/uploads/2013/01/3.gif");*/
+        }
+        .custom-form{
+            border: 1px solid darkblue;
+            margin-left: 200px;
+            width: 300px;
+/*            height: 300px;*/
+            text-align: center;
+            border-radius: 7px;
+            background-image: url("https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif");
+            font-family: Arial;
+        }
+        h3{
+           font-size: 25px;
+            color: white;
+            margin-bottom: 10px;
+        }
+        input[type='text'], input[type='password']{
+            height: 30px;
+            font-size: 20px;
+            margin: 15px;
+            text-align: center;
+            border: 1px solid darkblue;
+        }
+        input[type='text']:focus, input[type='password']:focus{
+            background-color: greenyellow;
+            outline: none;
+        }
+        input[type='submit']{
+            background-color: darkblue;
+            color: white;
+            border: none;
+            margin: 15px;
+            font-size: 20px;
+            padding: 14px 25px;
+            border-radius: 7px;
+        }
+        input[type='submit']:hover{
+            cursor: pointer;
+            box-shadow: 5px 5px 5px cyan;
+        }
+    </style>
+   
+</head>
+<body>
+
+<div class="custom-form">
+    <h3>Sign in Here</h3>
+    <input type="text" placeholder="Enter User Name"><br>
+    <input type="password" placeholder="Enter Password"><br>
+    <input type="submit" value="Submit">
+    
+    </div>
+
+</body>
+</html>

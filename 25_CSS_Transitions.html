@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 3 Transitions</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: darkblue;
+        }
+
+        .transition_width {
+            transition: width 5s;
+            box-shadow: 7px 7px 7px yellow;
+
+        }
+
+        .transition_width:hover {
+            width: 300px;
+            box-shadow: 7px 7px 7px red;
+        }
+
+        .transition_height {
+            transition: height 5s;
+            box-shadow: 7px 7px 7px yellow;
+
+        }
+
+        .transition_height:hover {
+            height: 300px;
+            box-shadow: 7px 7px 7px red;
+        }
+
+        .transition_height_width {
+            transition: width 5s, height 5s;
+            box-shadow: 7px 7px 7px yellow;
+        }
+
+        .transition_height_width:hover {
+            height: 300px;
+            width: 300px;
+            box-shadow: 7px 7px 7px red;
+        }
+
+        .transition_transform {
+            transition: width 5s, transform 5s;
+            box-shadow: 7px 7px 7px yellow;
+            /*        transition-delay: 5s;*/
+            transition-timing-function: linear;
+        }
+
+        .transition_transform:hover {
+            width: 300px;
+            transform: rotate(180deg);
+            box-shadow: 7px 7px 7px red;
+        }
+
+        .speed_curve_linear {
+            transition: width 2s;
+            transition-timing-function: ease-in;
+            box-shadow: 7px 7px 7px yellow;
+
+        }
+
+        .speed_curve_linear:hover {
+            width: 300px;
+            box-shadow: 7px 7px 7px red;
+        }
+
+        .speed_curve_ease_in {
+            transition: width 1s;
+            transition-timing-function: ease-out;
+            box-shadow: 7px 7px 7px yellow;
+        }
+
+        .speed_curve_ease_in:hover {
+            width: 300px;
+            box-shadow: 7px 7px 7px red;
+        }
+
+        .speed_curve_ease_out {
+            transition: width 1s;
+            transition-timing-function: ease-in-out;
+            box-shadow: 7px 7px 7px yellow;
+
+        }
+
+        .speed_curve_ease_out:hover {
+            width: 300px;
+            box-shadow: 7px 7px 7px red;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Width</h2>
+    <div class="transition_width">
+
+    </div>
+    <h2>Height</h2>
+    <div class="transition_height">
+
+    </div>
+    <h2>Both</h2>
+    <div class="transition_height_width">
+
+    </div>
+    <h2>Rotate</h2>
+    <div class="transition_transform">
+
+    </div>
+
+    <!-- transition-timing-function same start and end timings-->
+    <h2> ease-in</h2>
+    <div class="speed_curve_linear">
+
+    </div>
+
+    <!-- Slow start time fast end time -->
+    <h2>ease_out</h2>
+    <div class="speed_curve_ease_in">
+
+    </div>
+
+    <!-- fast start time slow end time -->
+    <h2>ease_in_out</h2>
+    <div class="speed_curve_ease_out">
+
+    </div>
+
+    <!-- delay Transition -->
+    <h2>delay the transition</h2>
+    <div>
+
+    </div>
+
+</body>
+</html>

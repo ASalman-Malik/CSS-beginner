@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Buttons</title>
+    <style>
+        .button{
+            background-color: darkblue;
+            color: white;
+            text-decoration: none;
+            border: none;
+            font-family: Arial;
+            font-size: 18px;
+            padding: 14px 50px;
+        }
+        .button:hover{
+            box-shadow: 7px 7px 7px red;
+        }
+        .btn{
+            color: white;
+            text-decoration: none;
+            border: none;
+            font-family: Arial;
+            font-size: 18px;
+            padding: 14px 50px;
+        }
+        .primary{
+            background-color: blue;
+        }
+        .secondary{
+            background-color: grey;
+        }
+        .warning{
+            background-color: orange;
+        }
+        .danger{
+            background-color: red;
+        }
+    </style>
+    
+</head>
+<body>
+
+<button>Default Button</button>
+<a href="#" class="button">Link</a>
+<button class="button">Button</button>
+<input class="button" type="button" value="Input">
+
+
+<hr>
+<button>Default Button</button>
+<a href="#" class="button-outline">Link</a>
+<button class="button-outline">Button</button>
+<input class="button-outline" type="button" value="Input">
+
+<hr>
+
+<button>Default Button</button>
+<button class="btn primary">Primary</button>
+<button class="btn secondary">Secondary</button>
+<button class="btn button">Success</button>
+<button class="btn warning">Warning</button>
+<button class="btn danger">Danger</button>
+
+
+
+</body>
+</html>
